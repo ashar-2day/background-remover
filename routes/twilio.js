@@ -75,7 +75,7 @@ router.post('/rembg', async (req, res) => {
         res.send(myurl)
     } catch (error) {
         res.status(500).send("Some iNTERNAL sERVER ERROR")
-        console.error(error)
+        console.error(error.message)
     }
 })
 
