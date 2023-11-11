@@ -8,7 +8,9 @@ const got = require("got");
 const fs = require('fs')
 
 
-
+router.get('/hello',async(req,res)=>{
+  res.send('helloworld')
+})
 
 router.post('/rembg', async (req, res) => {
     try {
